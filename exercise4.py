@@ -3,6 +3,7 @@ from pyzbar.pyzbar import decode
 from barcode import EAN13
 
 codigo = ""
+
 def reader(image):
     img = cv2.imread(image)
     img = cv2.resize(img, (523, 280))
@@ -21,8 +22,9 @@ def reader(image):
             
             if barcode.data!="":
 
-                codigo = barcode.data
+                codigo = barcode.data.decode()
                 codigo = codigo[:-1]
+                print(codigo.__class__)
                 print(f"ID ALUMNO: {codigo}")
 
 
