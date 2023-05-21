@@ -1,7 +1,6 @@
 import time
 import docker
 import telegram
-import telebot
 from telegram.ext import (Updater, CommandHandler)
 
 token = "5994239232:AAFrJATkMA2vLDztaOMTlYVWnPK6DUt5RWM"
@@ -30,4 +29,5 @@ comprobar("b8b4379e0639")
     
 while True:
     comprobar("b8b4379e0639")
+    time.sleep(60)
     
