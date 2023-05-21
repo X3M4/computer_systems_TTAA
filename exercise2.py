@@ -17,8 +17,6 @@ def create_directory(a):
                     sh.move(i, folder + i)
         else:
             os.mkdir(ext)
-            
-
 
 for i in lsdir:
     archivo, ext = os.path.splitext(i)
@@ -30,6 +28,5 @@ for i in extensions:
     if i == "":
         extensions.pop(extensions.index(i))
 
-#RECORDATORIO: MODIFICAR PARA PASAR UNA LISTA COMO PARÁMETRO
 for i in extensions:
     create_directory(i)
