@@ -24,8 +24,6 @@ def comprobar(contenedor):
             bot.send_message(text=mensaje, chat_id = id)
     except docker.errors.NotFound:
         print(f"{contenedor.name} no se encuentra")
-
-comprobar("b8b4379e0639")
     
 while True:
     comprobar("b8b4379e0639")

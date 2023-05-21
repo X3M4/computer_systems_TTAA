@@ -31,5 +31,5 @@ def reader(image):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    image = "/home/chema/Documentos/CFGS-DAM/COMPUTER SYSTEMS/THIRD TERM/THIRD-TERM-ASSESABLE-ACTIVITY/Alumno 01.png.png"
+    image = "/home/chema/Documentos/CFGS-DAM/COMPUTER SYSTEMS/THIRD TERM/THIRD-TERM-ASSESABLE-ACTIVITY/Alumno 01.png"
     reader(image)

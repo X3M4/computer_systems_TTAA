@@ -28,5 +28,6 @@ for i in extensions:
     if i == "":
         extensions.pop(extensions.index(i))
 
+
 for i in extensions:
     create_directory(i)

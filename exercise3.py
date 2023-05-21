@@ -4,7 +4,7 @@ from barcode.writer import ImageWriter
 
 def gen_code(nombre, id):
     codigo = barcode.get('ean13', id, writer = ImageWriter())
-    nombre_archivo = f"{nombre}.png"
+    nombre_archivo = f"{nombre}"
     codigo.save(nombre_archivo)
 
 def abrir_csv(archivo):
